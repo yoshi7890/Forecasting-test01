@@ -23,6 +23,7 @@ def mean_squared_error(actual, forecast):
 
 # ฟังก์ชันสำหรับการคำนวณด้วยวิธี Croston
 def croston_forecast(demand, alpha):
+    n = len(demand)
     Y = np.zeros(n)  # ค่าเฉลี่ยความต้องการที่ไม่ใช่ศูนย์
     P = np.zeros(n)  # ค่าเฉลี่ยช่วงเวลาระหว่างความต้องการที่ไม่ใช่ศูนย์
     F = np.zeros(n)  # ค่าพยากรณ์
